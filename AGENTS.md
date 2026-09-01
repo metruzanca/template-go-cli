@@ -27,6 +27,7 @@ Go CLI application built with [Cobra](https://github.com/spf13/cobra). Used as a
 - **Environment overrides** — [joho/godotenv](https://github.com/joho/godotenv) to load env vars at dev time that override config options or config location. Optionally, load a local config file instead.
 - **UI/pretty output** — [charmbracelet](https://github.com/charmbracelet) packages: `lipgloss`, `bubbletea`, `glow`, `bubbles` (common components), etc. `charm.land/lipgloss/v2` (with its `table` subpackage) is a valid alternative. Only style output when stdout is a terminal.
 - **Prompts/forms** — [charmbracelet/huh](https://github.com/charmbracelet/huh). Treat `huh.ErrUserAborted` as a silent cancel — never an error exit.
+- **README demos** — [charmbracelet/vhs](https://github.com/charmbracelet/vhs) to record terminal demos (.tape scripts → GIF/ASCIICast) for a pretty README, and [charmbracelet/vhs-action](https://github.com/charmbracelet/vhs-action) to render them in CI. Commit the generated GIFs so the README renders without tooling; deterministic via `Set FontSize`, fixed dimensions, and `Type @0ms`/`Sleep` for predictable pacing.
 
 ## Output & errors
 
