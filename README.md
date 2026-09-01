@@ -1,6 +1,6 @@
 # go-cli
 
-A starting point for new Go CLI applications. This repo is a template — clone
+A starting point for new Go CLI applications. This repo is a template: clone
 it, rename it, and build your own CLI on top.
 
 ## Structure
@@ -11,14 +11,14 @@ it, rename it, and build your own CLI on top.
   business logic.
 - **Internal packages** hold the real work: configuration, logging, and any
   domain logic. Everything under internal is private to the binary.
-- **Release plumbing** — [GoReleaser](https://goreleaser.com) ships binaries
+- **Release plumbing.** [GoReleaser](https://goreleaser.com) ships binaries
   for Linux, macOS, and Windows on both amd64 and arm64, and a
   GitHub Actions workflow publishes releases automatically from version tags.
 
 ## Features
 
 - **Optionally configured.** Config files are TOML ([BurntSushi/toml](https://github.com/BurntSushi/toml)) and are created
-  automatically the first time they're needed — no "run init first" ceremony. If
+  automatically the first time they're needed, with no "run init first" ceremony. If
   your CLI doesn't need config, the wiring is commented out and the feature
   simply isn't used.
 - **Off-by-default debug logging.** Debug logs go to a file, never to the
@@ -49,12 +49,12 @@ it, rename it, and build your own CLI on top.
   distinct.
 - **Commands fail with returned errors**, letting the framework handle exit
   behavior uniformly.
-- **Logs never touch the terminal** — that's what the log file is for.
+- **Logs never touch the terminal**; that's what the log file is for.
 - **Missing config is not an error.** Defaults are written on first use instead
   of prompting or warning.
 - **Releases are version-tagged** and follow semantic versioning; the changelog
   is grouped from conventional commit prefixes.
-- **Interactive prompts treat cancellation as a normal path** — backing out is
+- **Interactive prompts treat cancellation as a normal path**: backing out is
   not a failure.
 
 ## Getting started
