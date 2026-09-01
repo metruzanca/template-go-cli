@@ -6,9 +6,13 @@ import (
 	"github.com/spf13/cobra"
 )
 
+var Version = "dev"
+
 var rootCmd = &cobra.Command{
-	Use:   "go-cli",
-	Short: "A brief description of your application",
+	Use:          "go-cli",
+	Short:        "A brief description of your application",
+	Version:      Version,
+	SilenceUsage: true,
 }
 
 func Execute() {
