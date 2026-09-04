@@ -57,6 +57,20 @@ it, rename it, and build your own CLI on top.
 - **Interactive prompts treat cancellation as a normal path**: backing out is
   not a failure.
 
+## Agent skill
+
+The conventions for building these CLIs ship as an installable, updatable
+[agent skill](https://github.com/vercel-labs/skills). Give your coding agent the
+conventions — independently of cloning this repo:
+
+```sh
+npx skills add metruzanca/template-go-cli            # all detected agents
+npx skills add metruzanca/template-go-cli -a opencode
+npx skills update building-clis-in-go                # pull later updates
+```
+
+Add `-g` to install globally instead of into the current project.
+
 ## Getting started
 
 1. Clone the repo.

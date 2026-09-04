@@ -1,2 +1,4 @@
 /dist/
 /go-cli.log
+/.agents/
+/skills-lock.json
